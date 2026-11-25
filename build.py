@@ -147,7 +147,9 @@ ICON = {
     'pin': '<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
     'mail': '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
     'github': '<path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.4 3.4 0 0 0-1-2.6c3.3-.4 6.8-1.6 6.8-7.2A5.6 5.6 0 0 0 19.3 4a5.1 5.1 0 0 0-.1-4S18 0 15 1.6a14 14 0 0 0-6 0C6 0 4.8 0 4.8 0a5.1 5.1 0 0 0-.1 4 5.6 5.6 0 0 0-1.5 4.2c0 5.6 3.5 6.8 6.8 7.2A3.4 3.4 0 0 0 9 18v4" transform="translate(0 1) scale(.9)"/>',
-    'building': '<path d="m3 9 9-6 9 6M4 10h16M5 10v10m7-10v10m7-10v10M3 21h18"/>',
+    'orcid': '<circle cx="12" cy="12" r="9"/><path d="M8 10v7m0-10h.01M12 10h2a3.5 3.5 0 0 1 0 7h-2Z"/>',
+    'researchgate': '<path d="M6 19V5h5a4 4 0 0 1 0 8H6m5 0 7 6M17 4h4v4"/>',
+    'scholar': '<path d="m2 9 10-5 10 5-10 5ZM6 11v6q6 4 12 0v-6m4-2v7"/>',
 }
 
 def icon(name):
@@ -156,7 +158,7 @@ def icon(name):
 def shell(key, title, content, prefix, page_path=''):
     nav = ''.join(f'<a href="{prefix}{href}"'+(' aria-current="page"' if key==n else '')+f'>{label}</a>' for n,href,label in [('home','', 'Home'),('cv','cv/','CV'),('publications','publications/','Publications')])
     description = 'Reza Badpa is a Ph.D. candidate in Physical Oceanography at Stony Brook University, studying coastal dynamics, dissolved oxygen, hypoxia, and physics-guided machine learning.'
-    schema = json.dumps({'@context':'https://schema.org','@type':'Person','name':'Reza Badpa','jobTitle':'Ph.D. candidate in Physical Oceanography','affiliation':{'@type':'CollegeOrUniversity','name':'Stony Brook University'},'email':'mailto:reza.badpa@stonybrook.edu','sameAs':['https://github.com/rezart1427']})
+    schema = json.dumps({'@context':'https://schema.org','@type':'Person','name':'Reza Badpa','jobTitle':'Ph.D. candidate in Physical Oceanography','affiliation':{'@type':'CollegeOrUniversity','name':'Stony Brook University'},'email':'mailto:reza.badpa@stonybrook.edu','sameAs':['https://github.com/rezart1427','https://orcid.org/0000-0003-4790-7120','https://www.researchgate.net/profile/Reza-Badpa','https://scholar.google.com/citations?user=OhGCAvgAAAAJ&hl=en']})
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title} | Reza Badpa</title><meta name="description" content="{description}"><meta name="theme-color" content="#176575">
@@ -168,7 +170,7 @@ def shell(key, title, content, prefix, page_path=''):
 <div class="layout"><aside class="profile" aria-label="About Reza Badpa">
 <a class="profile-mark" href="{prefix}" aria-label="Reza Badpa home"><img src="{prefix}assets/reza-badpa-profile.png" alt="Reza Badpa" width="1536" height="1024" decoding="async"></a>
 <div class="profile-copy"><h2>Reza Badpa</h2><p class="role">Ph.D. candidate<br> Physical Oceanography</p><p class="affiliation">School of Marine and<br> Atmospheric Sciences<br> Stony Brook University</p>
-<ul class="profile-links"><li>{icon('pin')}<span>Stony Brook, New York</span></li><li><a href="mailto:reza.badpa@stonybrook.edu">{icon('mail')}Email</a></li><li><a href="https://github.com/rezart1427">{icon('github')}GitHub</a></li><li><a href="https://www.stonybrook.edu/somas/">{icon('building')}SoMAS</a></li></ul></div>
+<ul class="profile-links"><li>{icon('pin')}<span>Stony Brook, New York</span></li><li><a href="mailto:reza.badpa@stonybrook.edu">{icon('mail')}Email</a></li><li><a href="https://github.com/rezart1427">{icon('github')}GitHub</a></li><li><a href="https://orcid.org/0000-0003-4790-7120">{icon('orcid')}ORCID</a></li><li><a href="https://www.researchgate.net/profile/Reza-Badpa">{icon('researchgate')}ResearchGate</a></li><li><a href="https://scholar.google.com/citations?user=OhGCAvgAAAAJ&amp;hl=en">{icon('scholar')}Google Scholar</a></li></ul></div>
 </aside><main id="main" tabindex="-1">{content}</main></div>
 <footer><div class="footer-inner"><p>© 2026 Reza Badpa</p><p>Physical oceanography · Stony Brook University</p></div></footer>
 </body></html>'''
