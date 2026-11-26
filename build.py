@@ -89,7 +89,7 @@ def presentation(date, title, authors, venue, kind):
 
 HOME = '''
 <div class="intro">
-  <p class="eyebrow">Physical oceanography · Coastal science</p>
+  <p class="eyebrow">Physical oceanography · Coastal science · Machine Learning</p>
   <h1>Hi, I’m Reza Badpa.</h1>
   <p>I am a Ph.D. candidate in Physical Oceanography at <a href="https://www.stonybrook.edu/">Stony Brook University</a>’s <a href="https://www.stonybrook.edu/somas/">School of Marine and Atmospheric Sciences</a> in Stony Brook, NY.</p>
   <p>My research examines how coastal circulation, stratification, and mixing shape dissolved oxygen and hypoxia in estuaries. I combine physical oceanography, hydrodynamic modeling, and machine learning to understand these processes and improve coastal oxygen predictions. We also developed the Hypoxia Recurrence Risk Indicator (HRRI) to track how often low-oxygen conditions recur across coastal ecosystems, accounting for sensitivity to oxygen thresholds and uncertainty in risk classification.</p>
