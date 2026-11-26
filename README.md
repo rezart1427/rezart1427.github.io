@@ -6,7 +6,7 @@ Live site: https://rezart1427.github.io
 
 ## Editing the website
 
-Edit the biography, CV, manuscript, and presentation content in `build.py`, then run `python build.py` to regenerate the HTML. This uses only the Python standard library. Edit `assets/style.css` for styling and replace `assets/Reza-Badpa-CV.docx` when the downloadable CV changes. The public CV excludes phone numbers; keep them excluded in future updates.
+Edit the biography, CV, manuscript, and presentation content in `build.py`, then run `python build.py` to regenerate the HTML. This uses only the Python standard library. Edit `assets/style.css` for styling and replace `assets/Reza-Badpa-CV.pdf` when the downloadable CV changes. The public CV excludes phone numbers; keep them excluded in future updates.
 
 The original profile photograph is preserved in `assets/reza-badpa-profile.png`. Its circular crop is controlled by `.profile-mark img` in the stylesheet.
 

@@ -112,7 +112,7 @@ CV = '''
 <p class="eyebrow">Background & experience</p>
 <h1>Curriculum Vitae</h1>
 <p class="page-lead">Physical oceanography, coastal dynamics, and data-driven approaches to estuarine water quality.</p>
-<div class="page-actions"><a class="button" href="../assets/Reza-Badpa-CV.docx" download>Download full CV <span>(Word)</span></a><button class="text-button" type="button" data-print>Print this page</button></div>
+<div class="page-actions"><a class="button" href="../assets/Reza-Badpa-CV.pdf" download>Download full CV <span>(PDF)</span></a><button class="text-button" type="button" data-print>Print this page</button></div>
 <section aria-labelledby="education"><h2 id="education">Education</h2><ul class="entries">
 ''' + record('2023–present', 'Ph.D. candidate in Physical Oceanography', '<p>Stony Brook University · School of Marine and Atmospheric Sciences</p><p class="detail">Advisor: Dr. Kamazima Lwiza<br>Thesis: <em>Integrating Coastal Dynamics with Physics-guided Neural Networks for Dissolved Oxygen Prediction</em><br>Expected defense: Spring 2027 · Expected conferral: May 2027</p>') + record('2020', 'M.Sc. in Environmental Engineering — Coastal', '<p>University of Tehran, College of Engineering, Iran</p><p class="detail">Advisor: Dr. Masoud Sadrinasab</p>') + record('2011', 'B.Sc. in Civil Engineering', '<p>Shahrood University of Technology, College of Engineering, Iran</p>') + '''</ul></section>
 <section aria-labelledby="experience"><h2 id="experience">Research experience</h2><ul class="entries">
